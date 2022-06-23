@@ -1,0 +1,110 @@
+:root {
+    --bg: white;
+    --text: black;
+    --header: rgb(252, 190, 199);
+    --hover: rgb(249, 108, 131);
+    --subheader: rgb(81, 30, 38);
+  }
+
+header{
+    justify-content: space-between;
+    text-align: right;
+    background-color: var(--header);
+    color: var(--text);
+    display: flex;
+  }
+
+h1{
+    text-align: left;
+    background-color: var(--header);
+}
+
+h2{
+    text-align: center;
+    color: var(--subheader);
+}
+nav ul{
+    background-color: var(--header);
+    list-style-type: none;
+    margin: 8px;
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    min-width: 250px;
+    float: right;
+}
+  
+nav a {
+    display: flex;
+    color: var(--bg);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+li a:hover {
+    background-color: var(--hover);
+  }
+
+body {
+    background-color: var(--bg);
+    color: var(--text)
+  }
+
+.profile-pic {
+    float: left;
+    padding: 10px 12px;
+    width: 100px;
+    height: 120px
+
+}
+
+.container {
+    display: flex;
+  }
+
+.box {
+    display: flex;
+  }
+
+.one {
+    flex: 2 2 2;
+}
+
+.two {
+    flex: 1 1 1;
+}
+
+.three {
+    flex: 1 1 1;
+}
+
+.contact ul{
+    
+    list-style-type: none;
+    margin: 10px;
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    min-width: 50px;
+    float: right;
+}
+.contact a{
+    display: flex;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    font-size: 9pt;
+}
+
+  
+@media screen and (max-width: 600px){
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+}
