@@ -53,9 +53,11 @@ body {
 
 .profile-pic {
     float: left;
-    padding: 10px 12px;
+    padding: 1px 1px;
     width: 100px;
-    height: 120px
+    height: 120px;
+    border: 2px solid var(--hover);
+    border-radius: 25px;
 
 }
 
@@ -66,21 +68,10 @@ body {
     justify-content: space-evenly;
   }
 
-.box {
+.application {
     display: flex;
   }
 
-.one {
-    flex: 2 2 2;
-}
-
-.two {
-    flex: 1 1 1;
-}
-
-.three {
-    flex: 1 1 1;
-}
 
 .contact ul{
     
@@ -98,7 +89,6 @@ body {
     padding: 5px;
     text-decoration: none;
 }
-
 footer {
     text-align: center;
     font-size: 9pt;
