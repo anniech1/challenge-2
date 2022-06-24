@@ -72,7 +72,7 @@ body main{
 
 .container {
     display: flex;
-    flex: 4;
+    flex-direction: row;
     padding: 10px;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -91,9 +91,7 @@ body main{
     border-width: 1px;
     border-radius: 30px;
     padding: 10px;
-    
 }
-
 .application {
     background-color: var(--header);
     transition: width 1s, height 1s, background-color 1s;
@@ -107,28 +105,41 @@ body main{
     border-radius: 30px;
     padding: 10px;
 }
+
 .main-application p{
     text-align: center;
 }
 .application p{
     text-align: center;
 }
+
 .main-application img{
-    width: 100%;
+    width: 500px;
+    height: 300px;
+}
+.application img {
+    width: 200px;
+    height: 200px;
 }
 
-.application img {
-    width: 100%;
-}
 .main-application:hover {
     background-color: var(--hover);
-    width: 200%;
-    height: 200%;
+    width: 600px;
+    height: 400px;
 }
 .application:hover {
     background-color: var(--hover);
-    width: 200%;
-    height: 200%;
+    width: 400px;
+    height: 300px;
+}
+
+.main-application img:hover{
+    width: 550px;
+    height: 350px;
+}
+.application img:hover{
+    width: 250px;
+    height: 250px;
 }
 
  /* contact me section */
