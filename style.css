@@ -6,16 +6,20 @@
     --subheader: rgb(81, 30, 38);
   }
 
+/* header and nav section */
+
 header{
-    justify-content: space-between;
-    text-align: right;
     background-color: var(--header);
     color: var(--text);
     display: flex;
+    justify-content: space-between;
+    text-align: right;
+    align-items: center;
   }
 
 h1{
     text-align: left;
+    display: flex;
     background-color: var(--header);
 }
 
@@ -46,19 +50,21 @@ li a:hover {
     background-color: var(--hover);
   }
 
-body {
-    background-color: var(--bg);
-    color: var(--text)
-  }
+/* body and main section*/
 
-.profile-pic {
-    float: left;
-    padding: 1px 1px;
+body main{
+    background-color: var(--bg);
+    color: var(--text);
+    flex: 1 1 0;
+}
+
+.profile img{
     width: 100px;
     height: 120px;
     border: 2px solid var(--hover);
     border-radius: 25px;
-
+    float: left;
+    margin-right: 2%;
 }
 
 .container {
@@ -73,31 +79,30 @@ body {
   }
 
 
-.contact ul{
-    
-    list-style-type: none;
-    margin: 10px;
-    padding: 8px;
-    display: flex;
-    justify-content: space-between;
-    min-width: 50px;
-    float: right;
-}
-.contact a{
-    display: flex;
+.contact {
+    float: center;
     text-align: center;
+    margin: 10px;
     padding: 5px;
     text-decoration: none;
 }
+
 footer {
+    display: flex;
     text-align: center;
-    font-size: 9pt;
+    font-size: 11pt;
+    bottom: 0;
+    justify-content: center;
+    background-color: var(--header);
+
 }
 
   
-@media screen and (max-width: 600px){
-    .column {
-      flex: 100%;
-      max-width: 100%;
+@media screen and (max-width: 768px){
+    header {
+      flex-direction: column;
+    }
+    main {
+        flex-direction: column;
     }
 }
