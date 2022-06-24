@@ -68,37 +68,57 @@ body main{
     margin-right: 2%;
 }
 
-/* displaying work/applications  section */
+/* displaying work/applications section */
 
 .container {
-    color: var(--text);
     display: flex;
-    align-items: center;
+    flex: 4;
+    padding: 10px;
     flex-wrap: wrap;
-    flex-direction: row;
-    justify-content:flex-start;
-    padding: 8px;
+    justify-content: space-evenly;
+    align-items: flex-start;
   }
 
 .main-application {
     background-color: var(--header);
-    transition: width 2s, height 2s, background-color 2s;
+    transition: width 1s, height 1s, background-color 1s;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    align-items: center;
+    border-style: solid;
+    border-color: var(--hover);
+    border-width: 1px;
+    border-radius: 30px;
+    padding: 10px;
+    
 }
-img {
-    height: 80%;
-    width: 80%;
-    }
-
 
 .application {
-    display: flex;
-    width: 200px;
-    height: 200px;
     background-color: var(--header);
-    transition: width 2s, height 2s, background-color 2s;
+    transition: width 1s, height 1s, background-color 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-style: solid;
+    border-color: var(--hover);
+    border-width: 1px;
+    border-radius: 30px;
+    padding: 10px;
+}
+.main-application p{
+    text-align: center;
+}
+.application p{
+    text-align: center;
+}
+.main-application img{
+    width: 100%;
+}
+
+.application img {
+    width: 100%;
 }
 .main-application:hover {
     background-color: var(--hover);
